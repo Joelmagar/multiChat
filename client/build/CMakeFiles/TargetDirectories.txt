@@ -1,0 +1,5 @@
+/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/chat_client.dir
+/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/edit_cache.dir
+/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/rebuild_cache.dir
+/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/chat_client_autogen_timestamp_deps.dir
+/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/chat_client_autogen.dir
