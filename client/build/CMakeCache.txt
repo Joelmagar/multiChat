@@ -28,7 +28,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -54,7 +54,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -199,7 +199,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ChatClient
+CMAKE_PROJECT_NAME:STATIC=chat_client
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -317,6 +317,12 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/libOpenGL.so
 //Path to a file.
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
 QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
@@ -366,6 +372,18 @@ Vulkan_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 Vulkan_LIBRARY:FILEPATH=/usr/lib/libvulkan.so
 
+//Value Computed by CMake
+chat_client_BINARY_DIR:STATIC=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build
+
+//Value Computed by CMake
+chat_client_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+chat_client_SOURCE_DIR:STATIC=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client
+
+//Path to a library.
+pkgcfg_lib_SODIUM_sodium:FILEPATH=/usr/lib/libsodium.so
+
 
 ########################
 # INTERNAL cache entries
@@ -382,7 +400,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=4
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -563,6 +581,8 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 CMAKE_WARN_DEPRECATED:INTERNAL=ON
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/libOpenGL.so][/usr/lib/libGLX.so][/usr/include][ ][v()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v3.0.7()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding WrapAtomic
@@ -599,6 +619,10 @@ OPENGL_glx_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
 OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Qt feature: abstractbutton (from target Qt6::Widgets)
 QT_FEATURE_abstractbutton:INTERNAL=ON
 //Qt feature: abstractslider (from target Qt6::Widgets)
@@ -1074,7 +1098,7 @@ QT_FEATURE_opengles32:INTERNAL=OFF
 //Qt feature: openssl (from target Qt6::Core)
 QT_FEATURE_openssl:INTERNAL=ON
 //Qt feature: openssl_hash (from target Qt6::Core)
-QT_FEATURE_openssl_hash:INTERNAL=OFF
+QT_FEATURE_openssl_hash:INTERNAL=ON
 //Qt feature: openssl_linked (from target Qt6::Core)
 QT_FEATURE_openssl_linked:INTERNAL=ON
 //Qt feature: opensslv11 (from target Qt6::Core)
@@ -1500,6 +1524,41 @@ QT_FEATURE_xmlstreamreader:INTERNAL=ON
 QT_FEATURE_xmlstreamwriter:INTERNAL=ON
 //Qt feature: zstd (from target Qt6::Core)
 QT_FEATURE_zstd:INTERNAL=ON
+SODIUM_CFLAGS:INTERNAL=-I/usr/include
+SODIUM_CFLAGS_I:INTERNAL=
+SODIUM_CFLAGS_OTHER:INTERNAL=
+SODIUM_FOUND:INTERNAL=1
+SODIUM_INCLUDEDIR:INTERNAL=/usr/include
+SODIUM_INCLUDE_DIRS:INTERNAL=/usr/include
+SODIUM_LDFLAGS:INTERNAL=-L/usr/lib;-lsodium
+SODIUM_LDFLAGS_OTHER:INTERNAL=
+SODIUM_LIBDIR:INTERNAL=/usr/lib
+SODIUM_LIBRARIES:INTERNAL=sodium
+SODIUM_LIBRARY_DIRS:INTERNAL=/usr/lib
+SODIUM_LIBS:INTERNAL=
+SODIUM_LIBS_L:INTERNAL=
+SODIUM_LIBS_OTHER:INTERNAL=
+SODIUM_LIBS_PATHS:INTERNAL=
+SODIUM_MODULE_NAME:INTERNAL=libsodium
+SODIUM_PREFIX:INTERNAL=/usr
+SODIUM_STATIC_CFLAGS:INTERNAL=-I/usr/include
+SODIUM_STATIC_CFLAGS_I:INTERNAL=
+SODIUM_STATIC_CFLAGS_OTHER:INTERNAL=
+SODIUM_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include
+SODIUM_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lsodium;-lpthread;-pthread
+SODIUM_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+SODIUM_STATIC_LIBDIR:INTERNAL=
+SODIUM_STATIC_LIBRARIES:INTERNAL=sodium;pthread
+SODIUM_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib
+SODIUM_STATIC_LIBS:INTERNAL=
+SODIUM_STATIC_LIBS_L:INTERNAL=
+SODIUM_STATIC_LIBS_OTHER:INTERNAL=
+SODIUM_STATIC_LIBS_PATHS:INTERNAL=
+SODIUM_VERSION:INTERNAL=1.0.22
+SODIUM_libsodium_INCLUDEDIR:INTERNAL=
+SODIUM_libsodium_LIBDIR:INTERNAL=
+SODIUM_libsodium_PREFIX:INTERNAL=
+SODIUM_libsodium_VERSION:INTERNAL=
 //ADVANCED property for variable: Vulkan_GLSLANG_VALIDATOR_EXECUTABLE
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_GLSLC_EXECUTABLE
@@ -1510,4 +1569,9 @@ Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
 Vulkan_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+__pkg_config_arguments_SODIUM:INTERNAL=REQUIRED;libsodium
+__pkg_config_checked_SODIUM:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_SODIUM_sodium
+pkgcfg_lib_SODIUM_sodium-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib
 

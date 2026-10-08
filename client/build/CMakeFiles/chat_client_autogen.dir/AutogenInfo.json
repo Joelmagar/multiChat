@@ -7,35 +7,20 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/CMakeLists.txt",
-		"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.0/CMakeSystem.cmake",
+		"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.3/CMakeSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake",
-		"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.0/CMakeCCompiler.cmake",
-		"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.0/CMakeCXXCompiler.cmake",
+		"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux.cmake",
 		"/usr/share/cmake/Modules/Platform/UnixPaths.cmake",
-		"/usr/share/cmake/Modules/CMakeCInformation.cmake",
-		"/usr/share/cmake/Modules/CMakeLanguageInformation.cmake",
-		"/usr/share/cmake/Modules/Compiler/GNU-C.cmake",
-		"/usr/share/cmake/Modules/Compiler/GNU.cmake",
-		"/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"/usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake",
-		"/usr/share/cmake/Modules/Platform/Linux-GNU.cmake",
-		"/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake",
-		"/usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake",
-		"/usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake",
-		"/usr/share/cmake/Modules/Linker/GNU-C.cmake",
-		"/usr/share/cmake/Modules/Linker/GNU.cmake",
-		"/usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake",
-		"/usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake",
-		"/usr/share/cmake/Modules/Platform/Linker/GNU.cmake",
 		"/usr/share/cmake/Modules/CMakeCXXInformation.cmake",
 		"/usr/share/cmake/Modules/CMakeLanguageInformation.cmake",
 		"/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake",
 		"/usr/share/cmake/Modules/Compiler/GNU.cmake",
+		"/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-GNU.cmake",
 		"/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake",
@@ -45,9 +30,11 @@
 		"/usr/share/cmake/Modules/Linker/GNU.cmake",
 		"/usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake",
 		"/usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake",
+		"/usr/share/cmake/Modules/Platform/Linker/GNU.cmake",
 		"/usr/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/usr/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/usr/lib/cmake/Qt6/Qt6Config.cmake",
+		"/usr/lib/cmake/Qt6/QtPublicCMakeIncludeGuardHelpers.cmake",
 		"/usr/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake",
 		"/usr/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake",
 		"/usr/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
@@ -61,6 +48,7 @@
 		"/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake",
 		"/usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake",
 		"/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake",
+		"/usr/share/cmake/Modules/Internal/CheckCommon.cmake",
 		"/usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake",
 		"/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake",
 		"/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake",
@@ -74,6 +62,7 @@
 		"/usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
 		"/usr/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
 		"/usr/lib/cmake/Qt6/QtPublicGitHelpers.cmake",
+		"/usr/lib/cmake/Qt6/QtPublicJsonHelpers.cmake",
 		"/usr/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
 		"/usr/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake",
 		"/usr/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake",
@@ -104,9 +93,10 @@
 		"/usr/lib/cmake/Qt6/Qt6Dependencies.cmake",
 		"/usr/share/cmake/Modules/FindThreads.cmake",
 		"/usr/share/cmake/Modules/CheckLibraryExists.cmake",
-		"/usr/share/cmake/Modules/CheckIncludeFile.cmake",
-		"/usr/share/cmake/Modules/CheckCSourceCompiles.cmake",
-		"/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake",
+		"/usr/share/cmake/Modules/Internal/CheckCommon.cmake",
+		"/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake",
+		"/usr/share/cmake/Modules/Internal/CheckCommon.cmake",
+		"/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake",
 		"/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
 		"/usr/share/cmake/Modules/FindPackageMessage.cmake",
 		"/usr/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake",
@@ -553,7 +543,10 @@
 		"/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake",
 		"/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake",
 		"/usr/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
-		"/usr/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake"
+		"/usr/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake",
+		"/usr/share/cmake/Modules/FindPkgConfig.cmake",
+		"/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake/Modules/FindPackageMessage.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client",
 	"CROSS_CONFIG" : false,
@@ -563,8 +556,14 @@
 	[
 		[
 			"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/chatwindow.h",
-			"Mu",
+			"MU",
 			"EWIEGA46WW/moc_chatwindow.cpp",
+			null
+		],
+		[
+			"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/cryptohelper.h",
+			"MU",
+			"EWIEGA46WW/moc_cryptohelper.cpp",
 			null
 		]
 	],
@@ -588,10 +587,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/usr/include/qt6/QtWidgets",
-		"/usr/include/qt6",
 		"/usr/include/qt6/QtCore",
+		"/usr/include/qt6",
 		"/usr/lib/qt6/mkspecs/linux-g++",
+		"/usr/include/qt6/QtWidgets",
 		"/usr/include/qt6/QtGui",
 		"/usr/include/qt6/QtNetwork",
 		"/usr/include",
@@ -628,7 +627,7 @@
 	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/chat_client_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/moc",
-	"QT_UIC_EXECUTABLE" : "",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 11,
 	"SETTINGS_FILE" : "/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/chat_client_autogen.dir/AutogenUsed.txt",
@@ -636,15 +635,24 @@
 	[
 		[
 			"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/chatwindow.cpp",
-			"Mu",
+			"MU",
+			null
+		],
+		[
+			"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/cryptohelper.cpp",
+			"MU",
 			null
 		],
 		[
 			"/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/main.cpp",
-			"Mu",
+			"MU",
 			null
 		]
 	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,
 	"VERBOSITY" : 0
 }

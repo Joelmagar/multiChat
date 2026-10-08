@@ -70,8 +70,9 @@ include CMakeFiles/chat_client.dir/progress.make
 include CMakeFiles/chat_client.dir/flags.make
 
 chat_client_autogen/timestamp: /usr/lib/qt6/moc
+chat_client_autogen/timestamp: /usr/lib/qt6/uic
 chat_client_autogen/timestamp: CMakeFiles/chat_client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target chat_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chat_client"
 	/usr/bin/cmake -E cmake_autogen /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/chat_client_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/chat_client_autogen/timestamp
 
@@ -120,11 +121,26 @@ CMakeFiles/chat_client.dir/chatwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_client.dir/chatwindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/chatwindow.cpp -o CMakeFiles/chat_client.dir/chatwindow.cpp.s
 
+CMakeFiles/chat_client.dir/cryptohelper.cpp.o: CMakeFiles/chat_client.dir/flags.make
+CMakeFiles/chat_client.dir/cryptohelper.cpp.o: /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/cryptohelper.cpp
+CMakeFiles/chat_client.dir/cryptohelper.cpp.o: CMakeFiles/chat_client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/chat_client.dir/cryptohelper.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_client.dir/cryptohelper.cpp.o -MF CMakeFiles/chat_client.dir/cryptohelper.cpp.o.d -o CMakeFiles/chat_client.dir/cryptohelper.cpp.o -c /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/cryptohelper.cpp
+
+CMakeFiles/chat_client.dir/cryptohelper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_client.dir/cryptohelper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/cryptohelper.cpp > CMakeFiles/chat_client.dir/cryptohelper.cpp.i
+
+CMakeFiles/chat_client.dir/cryptohelper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_client.dir/cryptohelper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/cryptohelper.cpp -o CMakeFiles/chat_client.dir/cryptohelper.cpp.s
+
 # Object files for target chat_client
 chat_client_OBJECTS = \
 "CMakeFiles/chat_client.dir/chat_client_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/chat_client.dir/main.cpp.o" \
-"CMakeFiles/chat_client.dir/chatwindow.cpp.o"
+"CMakeFiles/chat_client.dir/chatwindow.cpp.o" \
+"CMakeFiles/chat_client.dir/cryptohelper.cpp.o"
 
 # External object files for target chat_client
 chat_client_EXTERNAL_OBJECTS =
@@ -132,16 +148,17 @@ chat_client_EXTERNAL_OBJECTS =
 chat_client: CMakeFiles/chat_client.dir/chat_client_autogen/mocs_compilation.cpp.o
 chat_client: CMakeFiles/chat_client.dir/main.cpp.o
 chat_client: CMakeFiles/chat_client.dir/chatwindow.cpp.o
+chat_client: CMakeFiles/chat_client.dir/cryptohelper.cpp.o
 chat_client: CMakeFiles/chat_client.dir/build.make
 chat_client: CMakeFiles/chat_client.dir/compiler_depend.ts
-chat_client: /usr/lib/libQt6Widgets.so.6.11.1
-chat_client: /usr/lib/libQt6Network.so.6.11.1
-chat_client: /usr/lib/libQt6Gui.so.6.11.1
+chat_client: /usr/lib/libQt6Widgets.so.6.11.2
+chat_client: /usr/lib/libQt6Network.so.6.11.2
+chat_client: /usr/lib/libQt6Gui.so.6.11.2
 chat_client: /usr/lib/libGLX.so
 chat_client: /usr/lib/libOpenGL.so
-chat_client: /usr/lib/libQt6Core.so.6.11.1
+chat_client: /usr/lib/libQt6Core.so.6.11.2
 chat_client: CMakeFiles/chat_client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable chat_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable chat_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chat_client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

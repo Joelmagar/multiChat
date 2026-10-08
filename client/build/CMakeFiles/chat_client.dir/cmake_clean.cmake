@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/chat_client.dir/chat_client_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/chat_client.dir/chatwindow.cpp.o"
   "CMakeFiles/chat_client.dir/chatwindow.cpp.o.d"
+  "CMakeFiles/chat_client.dir/cryptohelper.cpp.o"
+  "CMakeFiles/chat_client.dir/cryptohelper.cpp.o.d"
   "CMakeFiles/chat_client.dir/main.cpp.o"
   "CMakeFiles/chat_client.dir/main.cpp.o.d"
   "chat_client"

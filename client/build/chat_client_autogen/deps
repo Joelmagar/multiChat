@@ -1,11 +1,12 @@
 chat_client_autogen/timestamp: \
 	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/CMakeLists.txt \
-	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.0/CMakeCCompiler.cmake \
-	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.0/CMakeCXXCompiler.cmake \
-	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.0/CMakeSystem.cmake \
+	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake \
+	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/4.4.3/CMakeSystem.cmake \
 	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/chat_client_autogen/moc_predefs.h \
 	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/chatwindow.cpp \
 	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/chatwindow.h \
+	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/cryptohelper.cpp \
+	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/cryptohelper.h \
 	/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/main.cpp \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/bitsperlong.h \
@@ -277,6 +278,10 @@ chat_client_autogen/timestamp: \
 	/usr/include/linux/types.h \
 	/usr/include/locale.h \
 	/usr/include/pthread.h \
+	/usr/include/qt6/QtCore/QByteArray \
+	/usr/include/qt6/QtCore/QMap \
+	/usr/include/qt6/QtCore/QString \
+	/usr/include/qt6/QtCore/QStringList \
 	/usr/include/qt6/QtCore/q17memory.h \
 	/usr/include/qt6/QtCore/q20bit.h \
 	/usr/include/qt6/QtCore/q20functional.h \
@@ -286,6 +291,7 @@ chat_client_autogen/timestamp: \
 	/usr/include/qt6/QtCore/q20utility.h \
 	/usr/include/qt6/QtCore/q23type_traits.h \
 	/usr/include/qt6/QtCore/q23utility.h \
+	/usr/include/qt6/QtCore/qabstractitemmodel.h \
 	/usr/include/qt6/QtCore/qalgorithms.h \
 	/usr/include/qt6/QtCore/qalloc.h \
 	/usr/include/qt6/QtCore/qanystringview.h \
@@ -330,11 +336,13 @@ chat_client_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qhashfunctions.h \
 	/usr/include/qt6/QtCore/qiodevice.h \
 	/usr/include/qt6/QtCore/qiodevicebase.h \
+	/usr/include/qt6/QtCore/qitemselectionmodel.h \
 	/usr/include/qt6/QtCore/qiterable.h \
 	/usr/include/qt6/QtCore/qiterator.h \
 	/usr/include/qt6/QtCore/qlatin1stringview.h \
 	/usr/include/qt6/QtCore/qline.h \
 	/usr/include/qt6/QtCore/qlist.h \
+	/usr/include/qt6/QtCore/qlocale.h \
 	/usr/include/qt6/QtCore/qlogging.h \
 	/usr/include/qt6/QtCore/qmalloc.h \
 	/usr/include/qt6/QtCore/qmap.h \
@@ -355,6 +363,7 @@ chat_client_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qprocessordetection.h \
 	/usr/include/qt6/QtCore/qrect.h \
 	/usr/include/qt6/QtCore/qrefcount.h \
+	/usr/include/qt6/QtCore/qregularexpression.h \
 	/usr/include/qt6/QtCore/qscopedpointer.h \
 	/usr/include/qt6/QtCore/qscopeguard.h \
 	/usr/include/qt6/QtCore/qset.h \
@@ -422,6 +431,7 @@ chat_client_autogen/timestamp: \
 	/usr/include/qt6/QtGui/qpaintdevice.h \
 	/usr/include/qt6/QtGui/qpalette.h \
 	/usr/include/qt6/QtGui/qpen.h \
+	/usr/include/qt6/QtGui/qpicture.h \
 	/usr/include/qt6/QtGui/qpixelformat.h \
 	/usr/include/qt6/QtGui/qpixmap.h \
 	/usr/include/qt6/QtGui/qpolygon.h \
@@ -436,6 +446,7 @@ chat_client_autogen/timestamp: \
 	/usr/include/qt6/QtGui/qtguiexports.h \
 	/usr/include/qt6/QtGui/qtguiglobal.h \
 	/usr/include/qt6/QtGui/qtransform.h \
+	/usr/include/qt6/QtGui/qvalidator.h \
 	/usr/include/qt6/QtGui/qwindowdefs.h \
 	/usr/include/qt6/QtNetwork/QTcpSocket \
 	/usr/include/qt6/QtNetwork/qabstractsocket.h \
@@ -444,16 +455,31 @@ chat_client_autogen/timestamp: \
 	/usr/include/qt6/QtNetwork/qtnetwork-config.h \
 	/usr/include/qt6/QtNetwork/qtnetworkexports.h \
 	/usr/include/qt6/QtNetwork/qtnetworkglobal.h \
+	/usr/include/qt6/QtWidgets/QLabel \
 	/usr/include/qt6/QtWidgets/QLineEdit \
+	/usr/include/qt6/QtWidgets/QListWidget \
 	/usr/include/qt6/QtWidgets/QPushButton \
 	/usr/include/qt6/QtWidgets/QTextEdit \
 	/usr/include/qt6/QtWidgets/QWidget \
 	/usr/include/qt6/QtWidgets/qabstractbutton.h \
+	/usr/include/qt6/QtWidgets/qabstractitemdelegate.h \
+	/usr/include/qt6/QtWidgets/qabstractitemview.h \
 	/usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+	/usr/include/qt6/QtWidgets/qabstractslider.h \
+	/usr/include/qt6/QtWidgets/qabstractspinbox.h \
 	/usr/include/qt6/QtWidgets/qframe.h \
+	/usr/include/qt6/QtWidgets/qlabel.h \
 	/usr/include/qt6/QtWidgets/qlineedit.h \
+	/usr/include/qt6/QtWidgets/qlistview.h \
+	/usr/include/qt6/QtWidgets/qlistwidget.h \
 	/usr/include/qt6/QtWidgets/qpushbutton.h \
+	/usr/include/qt6/QtWidgets/qrubberband.h \
 	/usr/include/qt6/QtWidgets/qsizepolicy.h \
+	/usr/include/qt6/QtWidgets/qslider.h \
+	/usr/include/qt6/QtWidgets/qstyle.h \
+	/usr/include/qt6/QtWidgets/qstyleoption.h \
+	/usr/include/qt6/QtWidgets/qtabbar.h \
+	/usr/include/qt6/QtWidgets/qtabwidget.h \
 	/usr/include/qt6/QtWidgets/qtextedit.h \
 	/usr/include/qt6/QtWidgets/qtwidgets-config.h \
 	/usr/include/qt6/QtWidgets/qtwidgetsexports.h \
@@ -490,12 +516,14 @@ chat_client_autogen/timestamp: \
 	/usr/lib/cmake/Qt6/QtPublicAppleHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake \
+	/usr/lib/cmake/Qt6/QtPublicCMakeIncludeGuardHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicGitHelpers.cmake \
+	/usr/lib/cmake/Qt6/QtPublicJsonHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicPluginHelpers.cmake \
 	/usr/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake \
 	/usr/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake \
@@ -863,7 +891,6 @@ chat_client_autogen/timestamp: \
 	/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
 	/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdbool.h \
 	/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
-	/usr/share/cmake/Modules/CMakeCInformation.cmake \
 	/usr/share/cmake/Modules/CMakeCXXInformation.cmake \
 	/usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
@@ -873,36 +900,32 @@ chat_client_autogen/timestamp: \
 	/usr/share/cmake/Modules/CMakeLanguageInformation.cmake \
 	/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake \
 	/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake \
-	/usr/share/cmake/Modules/CheckCSourceCompiles.cmake \
 	/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake \
 	/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake \
-	/usr/share/cmake/Modules/CheckIncludeFile.cmake \
+	/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake \
 	/usr/share/cmake/Modules/CheckLibraryExists.cmake \
 	/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	/usr/share/cmake/Modules/Compiler/GNU-C.cmake \
 	/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake \
 	/usr/share/cmake/Modules/Compiler/GNU.cmake \
 	/usr/share/cmake/Modules/FindOpenGL.cmake \
 	/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
 	/usr/share/cmake/Modules/FindPackageMessage.cmake \
+	/usr/share/cmake/Modules/FindPkgConfig.cmake \
 	/usr/share/cmake/Modules/FindThreads.cmake \
 	/usr/share/cmake/Modules/FindVulkan.cmake \
 	/usr/share/cmake/Modules/GNUInstallDirs.cmake \
-	/usr/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake \
 	/usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake \
 	/usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake \
+	/usr/share/cmake/Modules/Internal/CheckCommon.cmake \
 	/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake \
 	/usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake \
 	/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake \
-	/usr/share/cmake/Modules/Linker/GNU-C.cmake \
 	/usr/share/cmake/Modules/Linker/GNU-CXX.cmake \
 	/usr/share/cmake/Modules/Linker/GNU.cmake \
 	/usr/share/cmake/Modules/MacroAddFileDependencies.cmake \
 	/usr/share/cmake/Modules/Platform/Linker/GNU.cmake \
-	/usr/share/cmake/Modules/Platform/Linker/Linux-GNU-C.cmake \
 	/usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake \
 	/usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake \
-	/usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake \
 	/usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake \
 	/usr/share/cmake/Modules/Platform/Linux-GNU.cmake \
 	/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake \

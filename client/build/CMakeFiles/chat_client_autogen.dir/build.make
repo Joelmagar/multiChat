@@ -69,8 +69,9 @@ include CMakeFiles/chat_client_autogen.dir/progress.make
 CMakeFiles/chat_client_autogen: chat_client_autogen/timestamp
 
 chat_client_autogen/timestamp: /usr/lib/qt6/moc
+chat_client_autogen/timestamp: /usr/lib/qt6/uic
 chat_client_autogen/timestamp: CMakeFiles/chat_client_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target chat_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chat_client"
 	/usr/bin/cmake -E cmake_autogen /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/CMakeFiles/chat_client_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/peace01/Documents/clz/cpp-programs/projects/chatApp/client/build/chat_client_autogen/timestamp
 

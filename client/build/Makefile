@@ -203,6 +203,30 @@ chatwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/chatwindow.cpp.s
 .PHONY : chatwindow.cpp.s
 
+cryptohelper.o: cryptohelper.cpp.o
+.PHONY : cryptohelper.o
+
+# target to build an object file
+cryptohelper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/cryptohelper.cpp.o
+.PHONY : cryptohelper.cpp.o
+
+cryptohelper.i: cryptohelper.cpp.i
+.PHONY : cryptohelper.i
+
+# target to preprocess a source file
+cryptohelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/cryptohelper.cpp.i
+.PHONY : cryptohelper.cpp.i
+
+cryptohelper.s: cryptohelper.cpp.s
+.PHONY : cryptohelper.s
+
+# target to generate assembly for a file
+cryptohelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/cryptohelper.cpp.s
+.PHONY : cryptohelper.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -244,6 +268,9 @@ help:
 	@echo "... chatwindow.o"
 	@echo "... chatwindow.i"
 	@echo "... chatwindow.s"
+	@echo "... cryptohelper.o"
+	@echo "... cryptohelper.i"
+	@echo "... cryptohelper.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

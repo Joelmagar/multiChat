@@ -72,28 +72,28 @@ include CMakeFiles/chat_server.dir/flags.make
 CMakeFiles/chat_server.dir/codegen:
 .PHONY : CMakeFiles/chat_server.dir/codegen
 
-CMakeFiles/chat_server.dir/server.cpp.o: CMakeFiles/chat_server.dir/flags.make
-CMakeFiles/chat_server.dir/server.cpp.o: /home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/server.cpp
-CMakeFiles/chat_server.dir/server.cpp.o: CMakeFiles/chat_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/chat_server.dir/server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_server.dir/server.cpp.o -MF CMakeFiles/chat_server.dir/server.cpp.o.d -o CMakeFiles/chat_server.dir/server.cpp.o -c /home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/server.cpp
+CMakeFiles/chat_server.dir/main.cpp.o: CMakeFiles/chat_server.dir/flags.make
+CMakeFiles/chat_server.dir/main.cpp.o: /home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/main.cpp
+CMakeFiles/chat_server.dir/main.cpp.o: CMakeFiles/chat_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/chat_server.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_server.dir/main.cpp.o -MF CMakeFiles/chat_server.dir/main.cpp.o.d -o CMakeFiles/chat_server.dir/main.cpp.o -c /home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/main.cpp
 
-CMakeFiles/chat_server.dir/server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_server.dir/server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/server.cpp > CMakeFiles/chat_server.dir/server.cpp.i
+CMakeFiles/chat_server.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_server.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/main.cpp > CMakeFiles/chat_server.dir/main.cpp.i
 
-CMakeFiles/chat_server.dir/server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_server.dir/server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/server.cpp -o CMakeFiles/chat_server.dir/server.cpp.s
+CMakeFiles/chat_server.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_server.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peace01/Documents/clz/cpp-programs/projects/chatApp/server/main.cpp -o CMakeFiles/chat_server.dir/main.cpp.s
 
 # Object files for target chat_server
 chat_server_OBJECTS = \
-"CMakeFiles/chat_server.dir/server.cpp.o"
+"CMakeFiles/chat_server.dir/main.cpp.o"
 
 # External object files for target chat_server
 chat_server_EXTERNAL_OBJECTS =
 
-chat_server: CMakeFiles/chat_server.dir/server.cpp.o
+chat_server: CMakeFiles/chat_server.dir/main.cpp.o
 chat_server: CMakeFiles/chat_server.dir/build.make
 chat_server: CMakeFiles/chat_server.dir/compiler_depend.ts
 chat_server: CMakeFiles/chat_server.dir/link.txt

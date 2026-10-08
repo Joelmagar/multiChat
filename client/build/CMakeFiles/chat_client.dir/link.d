@@ -5,12 +5,14 @@ chat_client: \
   CMakeFiles/chat_client.dir/chat_client_autogen/mocs_compilation.cpp.o \
   CMakeFiles/chat_client.dir/main.cpp.o \
   CMakeFiles/chat_client.dir/chatwindow.cpp.o \
-  /usr/lib/libQt6Widgets.so.6.11.1 \
-  /usr/lib/libQt6Network.so.6.11.1 \
-  /usr/lib/libQt6Gui.so.6.11.1 \
+  CMakeFiles/chat_client.dir/cryptohelper.cpp.o \
+  /usr/lib/libQt6Widgets.so.6.11.2 \
+  /usr/lib/libQt6Network.so.6.11.2 \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libsodium.so \
+  /usr/lib/libQt6Gui.so.6.11.2 \
   /usr/lib/libGLX.so \
   /usr/lib/libOpenGL.so \
-  /usr/lib/libQt6Core.so.6.11.1 \
+  /usr/lib/libQt6Core.so.6.11.2 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -49,6 +51,7 @@ chat_client: \
   /usr/lib/libproxy.so.1 \
   /usr/lib/libproxy.so.1 \
   /usr/lib/libcrypto.so.3 \
+  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libEGL.so.1 \
   /usr/lib/libfontconfig.so.1 \
   /usr/lib/libX11.so.6 \
@@ -67,7 +70,6 @@ chat_client: \
   /usr/lib/libdouble-conversion.so.3 \
   /usr/lib/libb2.so.1 \
   /usr/lib/libpcre2-16.so.0 \
-  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libkrb5.so.3 \
   /usr/lib/libk5crypto.so.3 \
   /usr/lib/libcom_err.so.2 \
@@ -117,17 +119,21 @@ CMakeFiles/chat_client.dir/main.cpp.o:
 
 CMakeFiles/chat_client.dir/chatwindow.cpp.o:
 
-/usr/lib/libQt6Widgets.so.6.11.1:
+CMakeFiles/chat_client.dir/cryptohelper.cpp.o:
 
-/usr/lib/libQt6Network.so.6.11.1:
+/usr/lib/libQt6Widgets.so.6.11.2:
 
-/usr/lib/libQt6Gui.so.6.11.1:
+/usr/lib/libQt6Network.so.6.11.2:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libsodium.so:
+
+/usr/lib/libQt6Gui.so.6.11.2:
 
 /usr/lib/libGLX.so:
 
 /usr/lib/libOpenGL.so:
 
-/usr/lib/libQt6Core.so.6.11.1:
+/usr/lib/libQt6Core.so.6.11.2:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 
@@ -205,6 +211,8 @@ CMakeFiles/chat_client.dir/chatwindow.cpp.o:
 
 /usr/lib/libcrypto.so.3:
 
+/usr/lib/ld-linux-x86-64.so.2:
+
 /usr/lib/libEGL.so.1:
 
 /usr/lib/libfontconfig.so.1:
@@ -240,8 +248,6 @@ CMakeFiles/chat_client.dir/chatwindow.cpp.o:
 /usr/lib/libb2.so.1:
 
 /usr/lib/libpcre2-16.so.0:
-
-/usr/lib/ld-linux-x86-64.so.2:
 
 /usr/lib/libkrb5.so.3:
 
