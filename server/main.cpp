@@ -40,10 +40,10 @@ void handle_client(int client_fd) {
 }
 
 int main() {
-  int server_fd = socket(AF_INET, SOCK_STREAM, 0);
-  sockaddr_in server_addr{};
-  server_addr.sin_family = AF_INET;
-  server_addr.sin_port = htons(8080);
+  int server_fd = socket(AF_INET, SOCK_STREAM, 0); // initialising socket server
+  sockaddr_in server_addr{};                       // declaring address
+  server_addr.sin_family = AF_INET; // defining the family of the server address
+  server_addr.sin_port = htons(8080); // port asigning through htons
   server_addr.sin_addr.s_addr = INADDR_ANY;
   bind(server_fd, (struct sockaddr *)&server_addr, sizeof(server_addr));
   listen(server_fd, 10);
@@ -51,8 +51,9 @@ int main() {
   while (true) {
     sockaddr_in client_addr{};
     socklen_t client_size = sizeof(client_addr);
-    int client_fd =
-        accept(server_fd, (struct sockaddr *)&client_addr, &client_size);
+    int client_fd = accept(server_fd, (struct sockaddr *)&client_addr,
+                           &client_size); // to accept client  ip - accept
+                                          // returns the client socket
     if (client_fd >= 0) {
       std::cout << "New client connected!\n";
       {
@@ -62,6 +63,6 @@ int main() {
       std::thread(handle_client, client_fd).detach();
     }
   }
-  close(server_fd);
+  close(server_fd); // socket closer
   return 0;
 }
