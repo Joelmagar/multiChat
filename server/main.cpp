@@ -1,12 +1,31 @@
-#include <arpa/inet.h>
+#ifdef _WIN32
+    #define WIN32_LEAN_AND_MEAN
+    #include <winsock2.h>
+    #include <ws2tcpip.h>
+    #pragma comment(lib, "ws2_32.lib")   // MSVC only; MinGW uses -lws2_32
+
+    using socket_t = SOCKET;
+    using socklen_type = int;
+    #define CLOSE_SOCKET(s) closesocket(s)
+    #define INVALID_SOCK INVALID_SOCKET
+#else
+    #include <arpa/inet.h>
+    #include <sys/socket.h>
+    #include <netinet/in.h>
+    #include <unistd.h>
+
+    using socket_t = int;
+    using socklen_type = socklen_t;
+    #define CLOSE_SOCKET(s) close(s)
+    #define INVALID_SOCK (-1)
+#endif
+
 #include <cstring>
 #include <iostream>
 #include <map>
 #include <mutex>
 #include <string>
 #include <thread>
-#include <unistd.h>
-
 std::map<std::string, int> clients;
 
 // username -> public key
@@ -42,8 +61,7 @@ std::string trim(const std::string &s)
 // ============================================================
 
 void send_msg(
-    int fd,
-    const std::string &msg
+  socket_t fd, const std::string &msg
 )
 {
     std::string framed =
@@ -267,8 +285,7 @@ void private_message(
 // ============================================================
 
 void send_existing_keys(
-    int client_fd,
-    const std::string &new_username
+    socket_t client_fd, const std::string &new_username
 )
 {
     std::lock_guard<std::mutex> lock(
@@ -300,8 +317,7 @@ void send_existing_keys(
 // ============================================================
 
 void handle_client(
-    int client_fd
-)
+socket_t client_fd)
 {
     // ========================================================
     // READ USERNAME
@@ -554,6 +570,13 @@ void handle_client(
 
 int main()
 {
+    #ifdef _WIN32
+    WSADATA wsa;
+    if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0) {
+        std::cerr << "WSAStartup failed.\n";
+        return 1;
+    }
+#endif
     int server_fd =
         socket(
             AF_INET,
@@ -663,6 +686,8 @@ int main()
 
 
     close(server_fd);
-
+#ifdef _WIN32
+    WSACleanup();
+#endif
     return 0;
 }

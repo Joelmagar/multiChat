@@ -9,8 +9,8 @@
 #include <QLabel>
 #include <QMap>
 #include <QStringList>
-
 #include "cryptohelper.h"
+
 
 class ChatWindow : public QWidget
 {
@@ -18,6 +18,7 @@ class ChatWindow : public QWidget
 
 public:
     explicit ChatWindow(
+     
         const QString &userName,
         const QString &serverIp,
         QWidget *parent = nullptr
